@@ -1,0 +1,215 @@
+body {
+    background-color: #C689C6;
+    font-family: 'Caveat', cursive;
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 30px;
+}
+
+p{
+    font-family: monospace;
+    display: block;
+    font-size: 30px;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 9ch;
+    
+    animation: typing 2s steps(9),
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing{
+    from { width: 0;}
+}
+
+@keyframes blink {
+    50% {border-color: transparent;} 
+}
+
+
+/* From uiverse.io by @satyamchaudharydev */
+/* inspired form gumroad website */
+.button {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    --bg: #000;
+    --hover-bg: #ff90e8;
+    --hover-text: #000;
+    color: #fff;
+    border: 1px solid var(--bg);
+    border-radius: 10px;
+    padding: 0.8em 2em;
+    background: var(--bg);
+    transition: 0.2s;
+  }
+  
+  .button:hover {
+    color: var(--hover-text);
+    transform: translate(-0.25rem,-0.25rem);
+    background: var(--hover-bg);
+    box-shadow: 0.25rem 0.25rem var(--bg);
+  }
+  
+  .button:active {
+    transform: translate(0);
+    box-shadow: none;
+  }
+
+
+#S1 {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%); 
+}
+
+#S2 {
+    background: #ffccf3; background: -moz-linear-gradient(to right,  #ffccf3 0%,#ffb7ba 100%); background: -webkit-linear-gradient(to right,  #ffccf3 0%,#ffb7ba 100%); background: linear-gradient(to right,  #ffccf3 0%,#ffb7ba 100%);
+}
+
+#S3{
+    background: #c2e9fb; background: -moz-linear-gradient(to bottom,  #c2e9fb 0%,#a1c4fd 100%); background: -webkit-linear-gradient(to bottom,  #c2e9fb 0%,#a1c4fd 100%); background: linear-gradient(to bottom,  #c2e9fb 0%,#a1c4fd 100%);
+}
+
+#S4{
+    background: #ffb3d9; background: -moz-linear-gradient(45deg,  #ffb3d9 0%,#fffe86 100%); background: -webkit-linear-gradient(45deg,  #ffb3d9 0%,#fffe86 100%); background: linear-gradient(45deg,  #ffb3d9 0%,#fffe86 100%);
+}
+
+#S5{
+    background: #fedaba; background: -moz-linear-gradient(45deg,  #fedaba 0%,#ffb6c1 100%); background: -webkit-linear-gradient(45deg,  #fedaba 0%,#ffb6c1 100%); background: linear-gradient(45deg,  #fedaba 0%,#ffb6c1 100%);
+}
+
+#S6{
+    background: #ffdee7; background: -moz-linear-gradient(to bottom,  #ffdee7 0%,#f2b2c3 100%); background: -webkit-linear-gradient(to bottom,  #ffdee7 0%,#f2b2c3 100%); background: linear-gradient(to bottom,  #ffdee7 0%,#f2b2c3 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+    overflow: hidden;
+    
+    margin: auto;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+#Contador{
+    display: inline;
+    
+}
+
+.Contenedor {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+#S2 img{
+    width: 500px;
+}
+
+img{
+    width: 350px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.Columna{
+    margin: auto;
+    
+}
+#S3 img{
+    width: 400px;
+}
+
+#S3 img{
+    width: 300px;
+}
+
+.video {
+    background-color:white;
+    border:5px solid #BFBFBF;
+    box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);
+    width: 300px;
+}
+
+.polaroid {
+    background-color:white;
+    padding:10px 10px 50px 10px;
+    border:1px solid #BFBFBF;
+    box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.RotarIzq {
+    transform:rotate(10deg);
+    -ms-transform:rotate(10deg); /* IE9 */
+    -webkit-transform:rotate(10deg); /* Safari y Chrome */
+    -moz-transform:rotate(10deg); 
+}
+ 
+.RotarDer {
+    transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg); /* IE9 */
+    -webkit-transform:rotate(-10deg); /* Safari y Chrome */
+    -moz-transform:rotate(-10deg); 
+}
+
+
+@media (max-width: 600px){
+    .Contenedor{
+        
+        align-items: center;
+        flex-direction: column;
+    }
+    img{
+        width: 150px;
+    }
+    h1{
+        font-size: 20px;
+    }
+
+    .Columna{
+        margin-top: 50px;
+    }
+
+    #S2 img{
+        width: 200px;
+    }
+
+    #S3 img{
+        width: 200px;
+    }
+
+
+    .video {
+        background-color:white;
+        border:5px solid #BFBFBF;
+        box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);
+        width: 180px;
+    }
+    #S5 img{
+        width: 100px;
+    }
+
+    #S5 #eliminar{
+        display: none;
+    }
+    #S4 img{
+        display: none;
+    }
+  }
